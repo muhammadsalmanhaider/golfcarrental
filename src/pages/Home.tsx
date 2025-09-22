@@ -34,7 +34,7 @@ const Home = () => {
         <div className="text-center">
           <Link 
             to="/category/luxury" 
-            className="inline-block bg-white border-2 border-yellow-500 text-yellow-600 px-6 py-2 rounded hover:bg-yellow-500 hover:text-white transition-colors"
+            className="inline-block bg-white border-2 border-red-600 text-red-600 px-6 py-2 rounded hover:bg-red-600 hover:text-white transition-colors"
           >
             All Luxury Cars →
           </Link>
@@ -55,7 +55,7 @@ const Home = () => {
         <div className="text-center">
           <Link 
             to="/category/sports" 
-            className="inline-block bg-white border-2 border-yellow-500 text-yellow-600 px-6 py-2 rounded hover:bg-yellow-500 hover:text-white transition-colors"
+            className="inline-block bg-white border-2 border-red-600 text-red-600 px-6 py-2 rounded hover:bg-red-600 hover:text-white transition-colors"
           >
             All Sports Cars →
           </Link>
@@ -76,7 +76,7 @@ const Home = () => {
         <div className="text-center">
           <Link 
             to="/category/suv" 
-            className="inline-block bg-white border-2 border-yellow-500 text-yellow-600 px-6 py-2 rounded hover:bg-yellow-500 hover:text-white transition-colors"
+            className="inline-block bg-white border-2 border-red-600 text-red-600 px-6 py-2 rounded hover:bg-red-600 hover:text-white transition-colors"
           >
             All SUV Cars →
           </Link>
@@ -97,7 +97,7 @@ const Home = () => {
         <div className="text-center">
           <Link 
             to="/category/economy" 
-            className="inline-block bg-white border-2 border-yellow-500 text-yellow-600 px-6 py-2 rounded hover:bg-yellow-500 hover:text-white transition-colors"
+            className="inline-block bg-white border-2 border-red-600 text-red-600 px-6 py-2 rounded hover:bg-red-600 hover:text-white transition-colors"
           >
             All Economy Cars →
           </Link>

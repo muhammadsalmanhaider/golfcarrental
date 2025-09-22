@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const brands = [
-  { name: 'Ferrari', logo: '🏎️' },
-  { name: 'Lamborghini', logo: '🐂' },
-  { name: 'Rolls Royce', logo: '👑' },
-  { name: 'Mercedes', logo: '⭐' },
-  { name: 'Porsche', logo: '🏁' },
-  { name: 'Audi', logo: '🔵' }
+  { name: 'Ferrari', logo: '🏎️', slug: 'ferrari' },
+  { name: 'Lamborghini', logo: '🐂', slug: 'lamborghini' },
+  { name: 'Rolls Royce', logo: '👑', slug: 'rolls-royce' },
+  { name: 'Mercedes', logo: '⭐', slug: 'mercedes' },
+  { name: 'Porsche', logo: '🏁', slug: 'porsche' },
+  { name: 'Audi', logo: '🔵', slug: 'audi' }
 ];
 
 const BrandSelector = () => {
@@ -15,23 +16,26 @@ const BrandSelector = () => {
       <div className="text-center mb-8">
         <h2 className="text-2xl font-bold text-gray-800 mb-2">SELECT A CAR FOR RENT BY BRAND</h2>
         <div className="text-right">
-          <span className="text-yellow-600 text-sm">All Brands →</span>
+          <Link to="/brands" className="text-red-600 hover:text-red-700 text-sm transition-colors">
+            All Brands →
+          </Link>
         </div>
       </div>
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         {brands.map((brand, index) => (
-          <button 
+          <Link
+            to={`/brand/${brand.slug}`}
             key={index}
-            className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center group"
+            className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 text-center group block"
           >
             <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">
               {brand.logo}
             </div>
-            <span className="text-sm font-medium text-gray-700 group-hover:text-yellow-600 transition-colors">
+            <span className="text-sm font-medium text-gray-700 group-hover:text-red-600 transition-colors">
               {brand.name}
             </span>
-          </button>
+          </Link>
         ))}
       </div>
     </section>

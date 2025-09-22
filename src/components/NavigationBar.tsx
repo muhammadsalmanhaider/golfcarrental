@@ -62,7 +62,7 @@ const NavigationBar = () => {
           {/* Home */}
           <Link 
             to="/" 
-            className="text-gray-700 hover:text-yellow-600 font-medium transition-colors"
+            className="text-gray-700 hover:text-red-600 font-medium transition-colors"
           >
             Home
           </Link>
@@ -70,7 +70,7 @@ const NavigationBar = () => {
           {/* About Us */}
           <Link 
             to="/about" 
-            className="text-gray-700 hover:text-yellow-600 font-medium transition-colors"
+            className="text-gray-700 hover:text-red-600 font-medium transition-colors"
           >
             About Us
           </Link>
@@ -81,7 +81,7 @@ const NavigationBar = () => {
             onMouseEnter={() => handleMouseEnter('carType')}
             onMouseLeave={handleMouseLeave}
           >
-            <button className="flex items-center text-gray-700 hover:text-yellow-600 font-medium transition-colors">
+            <button className="flex items-center text-gray-700 hover:text-red-600 font-medium transition-colors">
               Rent by Car Type
               <ChevronDown className="ml-1 h-4 w-4" />
             </button>
@@ -92,7 +92,7 @@ const NavigationBar = () => {
                   <div key={index} className="relative group">
                     <Link
                       to={type.path}
-                      className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors border-b border-gray-100 last:border-b-0"
+                      className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors border-b border-gray-100 last:border-b-0"
                     >
                       {type.name}
                     </Link>
@@ -108,7 +108,7 @@ const NavigationBar = () => {
             onMouseEnter={() => handleMouseEnter('brand')}
             onMouseLeave={handleMouseLeave}
           >
-            <button className="flex items-center text-gray-700 hover:text-yellow-600 font-medium transition-colors">
+            <button className="flex items-center text-gray-700 hover:text-red-600 font-medium transition-colors">
               Rent by Brand
               <ChevronDown className="ml-1 h-4 w-4" />
             </button>
@@ -117,7 +117,7 @@ const NavigationBar = () => {
               <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-md shadow-lg border border-gray-200 z-50 max-h-96 overflow-y-auto">
                 <Link
                   to="/brands"
-                  className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors border-b border-gray-100 font-semibold"
+                  className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors border-b border-gray-100 font-semibold"
                 >
                   All Brands
                 </Link>
@@ -125,7 +125,7 @@ const NavigationBar = () => {
                   <Link
                     key={index}
                     to={`/brand/${brand.toLowerCase().replace(' ', '-')}`}
-                    className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors border-b border-gray-100 last:border-b-0"
+                    className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors border-b border-gray-100 last:border-b-0"
                   >
                     {brand}
                   </Link>
@@ -136,7 +136,7 @@ const NavigationBar = () => {
           {/* FAQ */}
           <Link 
             to="/faq" 
-            className="text-gray-700 hover:text-yellow-600 font-medium transition-colors"
+            className="text-gray-700 hover:text-red-600 font-medium transition-colors"
           >
             FAQ
           </Link>
@@ -144,7 +144,7 @@ const NavigationBar = () => {
           {/* Contact Us */}
           <Link 
             to="/contact" 
-            className="text-gray-700 hover:text-yellow-600 font-medium transition-colors"
+            className="text-gray-700 hover:text-red-600 font-medium transition-colors"
           >
             Contact Us
           </Link>

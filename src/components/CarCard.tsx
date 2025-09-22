@@ -29,20 +29,20 @@ const CarCard: React.FC<CarCardProps> = ({ car }) => {
             alt={car.name} 
             className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
           />
-          <div className="absolute top-2 right-2 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">
+          <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 rounded text-xs font-bold">
             {car.dailyRate} AED
           </div>
         </div>
         
         <div className="p-4">
-          <h3 className="font-semibold text-gray-800 mb-2 group-hover:text-yellow-600 transition-colors">
+          <h3 className="font-semibold text-gray-800 mb-2 group-hover:text-red-600 transition-colors">
             {car.name}
           </h3>
           
           <div className="flex gap-2">
             <button 
               onClick={handleCall}
-              className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-2 rounded text-sm font-medium transition-colors flex items-center justify-center gap-2"
+              className="flex-1 bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded text-sm font-medium transition-colors flex items-center justify-center gap-2"
             >
               <FaPhone size={12} />
               Call Us

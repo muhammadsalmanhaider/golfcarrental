@@ -11,6 +11,7 @@ import BlogPage from './pages/BlogPage';
 import FAQPage from './pages/FAQPage';
 import ContactPage from './pages/ContactPage';
 import DepositWaiverPage from './pages/DepositWaiverPage';
+import SearchResults from './pages/SearchResults';
 import Footer from './components/Footer';
 import NavigationBar from './components/NavigationBar';
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/deposit-waiver" element={<DepositWaiverPage />} />
+          <Route path="/search" element={<SearchResults />} />
         </Routes>
         <Footer />
     </Router>

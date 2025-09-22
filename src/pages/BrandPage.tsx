@@ -25,7 +25,7 @@ const BrandPage = () => {
     <div className="container mx-auto px-4 py-8">
       <Link 
         to="/" 
-        className="inline-flex items-center gap-2 text-yellow-600 hover:text-yellow-700 mb-6"
+        className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 mb-6"
       >
         <FaArrowLeft />
         Back to Home

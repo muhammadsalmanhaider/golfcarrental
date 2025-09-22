@@ -26,7 +26,7 @@ const AllBrandsPage = () => {
     <div className="container mx-auto px-4 py-8">
       <Link 
         to="/" 
-        className="inline-flex items-center gap-2 text-yellow-600 hover:text-yellow-700 mb-6"
+        className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 mb-6"
       >
         <FaArrowLeft />
         Back to Home
@@ -50,7 +50,7 @@ const AllBrandsPage = () => {
               <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
                 {brand.logo}
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-yellow-600 transition-colors">
+              <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-red-600 transition-colors">
                 {brand.name}
               </h3>
               <p className="text-gray-600 text-sm">
