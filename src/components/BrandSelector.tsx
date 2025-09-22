@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { scrollToTop } from '../utils/scrollToTop';
 
 const brands = [
   { name: 'Ferrari', logo: '🏎️', slug: 'ferrari' },
@@ -26,6 +27,7 @@ const BrandSelector = () => {
         {brands.map((brand, index) => (
           <Link
             to={`/brand/${brand.slug}`}
+            onClick={scrollToTop}
             key={index}
             className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 text-center group block"
           >

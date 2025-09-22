@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaWhatsapp, FaPhone } from 'react-icons/fa';
+import { scrollToTop } from '../utils/scrollToTop';
 import { Car } from '../types/car';
 
 interface CarCardProps {
@@ -21,7 +22,7 @@ const CarCard: React.FC<CarCardProps> = ({ car }) => {
   };
 
   return (
-    <Link to={`/car/${car.id}`} className="block group">
+    <Link to={`/car/${car.id}`} onClick={scrollToTop} className="block group">
       <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
         <div className="relative">
           <img 
