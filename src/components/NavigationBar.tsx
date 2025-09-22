@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
+import { scrollToTop } from '../utils/scrollToTop';
 
 const NavigationBar = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -62,6 +63,7 @@ const NavigationBar = () => {
           {/* Home */}
           <Link 
             to="/" 
+            onClick={scrollToTop}
             className="text-gray-700 hover:text-red-600 font-medium transition-colors"
           >
             Home
@@ -70,6 +72,7 @@ const NavigationBar = () => {
           {/* About Us */}
           <Link 
             to="/about" 
+            onClick={scrollToTop}
             className="text-gray-700 hover:text-red-600 font-medium transition-colors"
           >
             About Us
@@ -92,6 +95,7 @@ const NavigationBar = () => {
                   <div key={index} className="relative group">
                     <Link
                       to={type.path}
+                      onClick={scrollToTop}
                       className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors border-b border-gray-100 last:border-b-0"
                     >
                       {type.name}
@@ -117,6 +121,7 @@ const NavigationBar = () => {
               <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-md shadow-lg border border-gray-200 z-50 max-h-96 overflow-y-auto">
                 <Link
                   to="/brands"
+                  onClick={scrollToTop}
                   className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors border-b border-gray-100 font-semibold"
                 >
                   All Brands
@@ -125,6 +130,7 @@ const NavigationBar = () => {
                   <Link
                     key={index}
                     to={`/brand/${brand.toLowerCase().replace(' ', '-')}`}
+                    onClick={scrollToTop}
                     className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors border-b border-gray-100 last:border-b-0"
                   >
                     {brand}
@@ -136,6 +142,7 @@ const NavigationBar = () => {
           {/* FAQ */}
           <Link 
             to="/faq" 
+            onClick={scrollToTop}
             className="text-gray-700 hover:text-red-600 font-medium transition-colors"
           >
             FAQ
@@ -144,6 +151,7 @@ const NavigationBar = () => {
           {/* Contact Us */}
           <Link 
             to="/contact" 
+            onClick={scrollToTop}
             className="text-gray-700 hover:text-red-600 font-medium transition-colors"
           >
             Contact Us

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { scrollToTop } from '../utils/scrollToTop';
 import CarCard from '../components/CarCard';
 import BrandSelector from '../components/BrandSelector';
 import { luxuryCars, sportsCars, suvCars, economyCars } from '../data/cars';
@@ -34,6 +35,7 @@ const Home = () => {
         <div className="text-center">
           <Link 
             to="/category/luxury" 
+            onClick={scrollToTop}
             className="inline-block bg-white border-2 border-red-600 text-red-600 px-6 py-2 rounded hover:bg-red-600 hover:text-white transition-colors"
           >
             All Luxury Cars →
@@ -55,6 +57,7 @@ const Home = () => {
         <div className="text-center">
           <Link 
             to="/category/sports" 
+            onClick={scrollToTop}
             className="inline-block bg-white border-2 border-red-600 text-red-600 px-6 py-2 rounded hover:bg-red-600 hover:text-white transition-colors"
           >
             All Sports Cars →
@@ -76,6 +79,7 @@ const Home = () => {
         <div className="text-center">
           <Link 
             to="/category/suv" 
+            onClick={scrollToTop}
             className="inline-block bg-white border-2 border-red-600 text-red-600 px-6 py-2 rounded hover:bg-red-600 hover:text-white transition-colors"
           >
             All SUV Cars →
@@ -97,6 +101,7 @@ const Home = () => {
         <div className="text-center">
           <Link 
             to="/category/economy" 
+            onClick={scrollToTop}
             className="inline-block bg-white border-2 border-red-600 text-red-600 px-6 py-2 rounded hover:bg-red-600 hover:text-white transition-colors"
           >
             All Economy Cars →
