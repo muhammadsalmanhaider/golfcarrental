@@ -4,31 +4,6 @@ const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-200 py-12">
       <div className="container mx-auto px-4">
-        {/* Our Branches */}
-        <div className="text-center mb-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">OUR BRANCHES</h3>
-          
-          <div className="flex flex-wrap justify-center items-center gap-8 mb-8">
-            <div className="h-16 w-32 bg-gray-100 rounded flex items-center justify-center">
-              <span className="text-xs font-bold text-gray-600">BUSINESS BAY PARK</span>
-            </div>
-            <div className="h-16 w-32 bg-gray-100 rounded flex items-center justify-center">
-              <span className="text-xs font-bold text-gray-600">JUMEIRA BEACH</span>
-            </div>
-            <div className="h-16 w-32 bg-gray-100 rounded flex items-center justify-center">
-              <span className="text-xs font-bold text-gray-600">BURJ AL ARAB</span>
-            </div>
-            <div className="h-16 w-32 bg-gray-100 rounded flex items-center justify-center">
-              <span className="text-xs font-bold text-gray-600">VIDA HOTELS</span>
-            </div>
-            <div className="h-16 w-32 bg-gray-100 rounded flex items-center justify-center">
-              <span className="text-xs font-bold text-gray-600">SOFITEL</span>
-            </div>
-            <div className="h-16 w-32 bg-gray-100 rounded flex items-center justify-center">
-              <span className="text-xs font-bold text-gray-600">PALACE DOWNTOWN</span>
-            </div>
-          </div>
-        </div>
 
         {/* Navigation Links */}
         <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm">
